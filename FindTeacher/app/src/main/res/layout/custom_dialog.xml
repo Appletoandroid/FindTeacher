@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_otp_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:padding="@dimen/_20sdp"
+    android:background="@drawable/rect_shape"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/otp_label"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/code_one"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:background="@drawable/square_shape"
+            android:hint="*"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:maxLength="1"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/code_two"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/square_shape"
+            android:hint="*"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:maxLength="1"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/code_three"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/square_shape"
+            android:hint="*"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/code_four"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/square_shape"
+            android:hint="*"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_fees_submit"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/blue_button_bg"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp" />
+
+</LinearLayout>

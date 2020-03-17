@@ -1,0 +1,8 @@
+1. When student registers after form submission State and city selection should be shown to student. State and city selection is shown to student whoes state and city is empty.
+1 A. How the student is going to find teacher after registration. you need to solve above issue for that
+2. Menu does not looks completed yet. check the menu structure i mention in flow diagram. 
+3. Logout option is not added in menu. Menu design as per mention in separate image in freelancer chat
+4. Video Play option is not done yet.
+5. In state city selection location picker is not working.
+6. On state city selection you have not called the "4.Update Student Location" API.
+7. "7.	Send Request to Teacher for join" this API is also not done. on Teachers Select button.

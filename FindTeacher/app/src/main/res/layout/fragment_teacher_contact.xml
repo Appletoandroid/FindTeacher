@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragment.TeacherContactDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_teacher_profile"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/default_user"
+                android:padding="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/tv_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:text="Meenal Kumari"
+                android:textColor="@color/primary_text_color"/>
+
+            <TextView
+                android:id="@+id/tv_teacher_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:text="Ahmedabad"
+                android:textColor="@color/secondary_text_color"/>
+
+            <TextView
+                android:id="@+id/tv_teacher_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:text="Age : 36"
+                android:textColor="@color/primary_text_color"/>
+
+            <TextView
+                android:id="@+id/tv_teacher_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:text="4 years Expperience"
+                android:textColor="@color/primary_text_color"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/message_us"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/message"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/primary_text_color"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/user_chat"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chat"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/primary_text_color"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/phone_call"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/primary_text_color"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/video_call"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/video_call"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/primary_text_color"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

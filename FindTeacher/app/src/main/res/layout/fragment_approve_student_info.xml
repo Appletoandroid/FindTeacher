@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ApproveStudentInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:alpha="0.3"
+                android:background="@drawable/student_image"/>
+
+            <TextView
+                android:id="@+id/tv_city_name"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="Ahmedabad"
+                android:textAllCaps="true"
+                android:background="@color/light_grey"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_no_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Student Found"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_student_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_student_profile"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:src="@drawable/default_user"
+                            android:padding="@dimen/_10sdp"/>
+
+                        <TextView
+                            android:id="@+id/tv_student_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_15ssp"
+                            android:text="Divya K"
+                            android:textColor="@color/primary_text_color"/>
+
+                        <TextView
+                            android:id="@+id/tv_student_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_14ssp"
+                            android:text="Ahmedabad"
+                            android:textColor="@color/secondary_text_color"/>
+
+                        <TextView
+                            android:id="@+id/tv_student_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_15ssp"
+                            android:text="Age : 36"
+                            android:textColor="@color/primary_text_color"/>
+
+                        <TextView
+                            android:id="@+id/tv_student_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="+91 9842454454"
+                            android:textSize="@dimen/_15ssp"
+                            android:textColor="@color/primary_text_color"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_student_session"
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:text="@string/session"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_13ssp"
+                                    android:background="@drawable/blue_button_bg"/>
+
+                                <Button
+                                    android:id="@+id/btn_student_fees"
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:text="@string/fees"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_13ssp"
+                                    android:background="@drawable/yellow_button_bg"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

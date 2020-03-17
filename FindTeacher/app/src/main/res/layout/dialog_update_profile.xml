@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="User details"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/white"
+        android:background="@color/dim_yellow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="@string/full_name"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/primary_text_color"/>
+
+                <EditText
+                    android:id="@+id/dialog_edt_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@drawable/square_shape"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/_13ssp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/email"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/primary_text_color"/>
+
+                <EditText
+                    android:id="@+id/dialog_edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@drawable/square_shape"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/_13ssp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/mobile"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/primary_text_color"/>
+
+                <EditText
+                    android:id="@+id/dialog_edt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@drawable/square_shape"
+                    android:hint="@string/mobile"
+                    android:inputType="number"
+                    android:textSize="@dimen/_13ssp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/age"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/primary_text_color"/>
+
+                <EditText
+                    android:id="@+id/dialog_edt_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@drawable/square_shape"
+                    android:hint="@string/age"
+                    android:inputType="number"
+                    android:textSize="@dimen/_13ssp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/gender"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/primary_text_color"/>
+
+                <EditText
+                    android:id="@+id/dialog_edt_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@drawable/square_shape"
+                    android:hint="@string/gender"
+                    android:inputType="text"
+                    android:textSize="@dimen/_13ssp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="State"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/primary_text_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/square_shape"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/dialog_sp_state_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@null"/>
+
+                </LinearLayout>
+
+                <!--<EditText
+                    android:id="@+id/dialog_edt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@drawable/square_shape"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:textSize="@dimen/_13ssp"/>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="City"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/primary_text_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/square_shape"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/dialog_sp_city_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@null" />
+
+                </LinearLayout>
+
+                <!--<EditText
+                    android:id="@+id/dialog_edt_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:textSize="@dimen/_13ssp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/ll_fees_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Teacher Fees"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/primary_text_color"/>
+
+                    <EditText
+                        android:id="@+id/dialog_edt_teacher_fees"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/square_shape"
+                        android:hint="Teacher Fees"
+                        android:inputType="number"
+                        android:textSize="@dimen/_13ssp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Experience"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="@color/primary_text_color"/>
+
+                    <EditText
+                        android:id="@+id/dialog_edt_teacher_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/square_shape"
+                        android:hint="Experience"
+                        android:inputType="number"
+                        android:textSize="@dimen/_13ssp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/dialog_btn_save"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:text="@string/submit"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/dim_yellow"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

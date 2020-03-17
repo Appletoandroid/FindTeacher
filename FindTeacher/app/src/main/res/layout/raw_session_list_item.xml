@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/dim_white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/raw_iv_session_status"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_dot"
+                android:tint="@color/dim_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/raw_tv_session_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Completed"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dim_red"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/raw_tv_session_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_session"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/primary_text_color"/>
+
+                <TextView
+                    android:id="@+id/raw_tv_session_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/short_desc"
+                    android:maxLines="4"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/secondary_text_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/raw_tv_wating_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:text="Status : Waiting for student approval"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dim_red"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/raw_ll_otp_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@drawable/rect_shape"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/otp_label"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/primary_text_color"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/raw_code_one"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:imeOptions="actionDone"
+                    android:background="@drawable/square_shape"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:hint="*"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/raw_code_two"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:imeOptions="actionDone"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/square_shape"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:hint="*"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/raw_code_three"
+                    android:layout_width="35sp"
+                    android:imeOptions="actionDone"
+                    android:layout_height="35sp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/square_shape"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:hint="*"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/raw_code_four"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:imeOptions="actionDone"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/square_shape"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:hint="*"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/raw_btn_submit_otp"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_button_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>
